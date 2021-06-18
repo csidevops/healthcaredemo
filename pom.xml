@@ -7,25 +7,47 @@
 	<name>CarApp</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
-	<properties>
+	
+	<parent>
+    		<groupId>com.google.cloud.samples</groupId>
+    		<artifactId>shared-configuration</artifactId>
+    		<version>1.0.23</version>
+  	</parent>
+
+  	<!-- [START compiler] -->
+  	<properties>  <!-- App Engine Standard currently requires Java 8 -->
+    		<maven.compiler.target>1.8</maven.compiler.target>
+    		<maven.compiler.source>1.8</maven.compiler.source>
+    		<failOnMissingWebXml>false</failOnMissingWebXml>
+  	</properties>
+  	<!-- [END compiler] -->
+
+  	<properties>
 		<java-version>1.6</java-version>
 		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
+	
 	<dependencies>
 	
+	<dependency>
+      		<groupId>com.google.appengine</groupId>
+      		<artifactId>appengine-api-1.0-sdk</artifactId>
+      		<version>1.9.89</version>
+    	</dependency
+		
 	<dependency>
 	<groupId>org.json</groupId>
 	<artifactId>json</artifactId>
 	<version>20090211</version>
-</dependency>
+	</dependency>
 
 	<dependency>
 	<groupId>javax.servlet</groupId>
 	<artifactId>jstl</artifactId>
 	<version>1.2</version>
-</dependency>
+	</dependency>
 	
 	
 		<!-- Spring -->
