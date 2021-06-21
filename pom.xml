@@ -69,11 +69,13 @@
 		
 		
 	<!-- Hibernate -->
+		<!-- 21/06/2021 - commented out due to Gcloud error in Devserver
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>
 			<artifactId>hibernate-jpa-2.0-api</artifactId>
 			<version>1.0.1.Final</version>
 		</dependency>
+		-->
 		<dependency>
 			<groupId>javax.persistence</groupId>
 			<artifactId>persistence-api</artifactId>
