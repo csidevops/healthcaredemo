@@ -4,10 +4,11 @@
                                          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
-		<!--
+		
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		-->
+		<!--
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		-->
 		<property name="hibernate.connection.url">jdbc:mysql://35.244.40.40:3306/carapp</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">Eadevops#1234</property>
