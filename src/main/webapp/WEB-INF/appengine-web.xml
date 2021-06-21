@@ -19,6 +19,5 @@
   <threadsafe>true</threadsafe>
   <runtime>java8</runtime>
   <sessions-enabled>true</sessions-enabled> 
-  <use-google-connector-j>true</use-google-connector-j>
 </appengine-web-app>
   <!-- [END config] -->
