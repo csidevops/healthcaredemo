@@ -66,6 +66,13 @@
 	</dependency>
 		
 	<dependency>
+    		<groupId>com.google.oauth-client</groupId>
+    		<artifactId>google-oauth-client</artifactId>
+    		<version>1.31.2</version>
+	</dependency>
+
+		
+	<dependency>
 	<groupId>org.json</groupId>
 	<artifactId>json</artifactId>
 	<version>20090211</version>
