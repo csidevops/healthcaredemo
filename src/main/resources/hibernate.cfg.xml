@@ -5,11 +5,11 @@
 <hibernate-configuration>
 	<session-factory>
 		
-		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.GoogleDriver</property>
 		<!--
-		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		-->
-		<property name="hibernate.connection.url">jdbc:mysql://c-si-devsecops:asia-south1:csidevsecops/carapp</property>
+		<property name="hibernate.connection.url">jdbc:google:mysql:/c-si-devsecops:asia-south1:csidevsecops/carapp</property>
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">Eadevops#1234</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
