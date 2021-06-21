@@ -8,6 +8,8 @@ import org.hibernate.Query;
 
 import com.neu.Rohit.Exception.AddException;
 import com.neu.Rohit.pojo.User;
+//Added as part of Gcloud Appengine setup
+import com.google.api.client.json.jackson2.JacksonFactory;
 
 
 public class UserDao extends DAO{
