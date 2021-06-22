@@ -8,8 +8,6 @@ package com.neu.Rohit.Exception;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import com.neu.Rohit.Exception.AddException;
-import org.evosuite.runtime.EvoRunner;
-import org.evosuite.runtime.EvoRunnerParameters;
 import org.junit.runner.RunWith;
 
 public class AddException_ESTest {
