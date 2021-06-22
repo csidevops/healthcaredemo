@@ -16,7 +16,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test0()  throws Throwable  {
-      MockDate mockDate0 = new MockDate();
+      MockDate mockDate0 = new Date();
       BookingDetails bookingDetails0 = new BookingDetails("", "", "]Lu18O'2v3$ hr", mockDate0, "", mockDate0, "H");
       String string0 = bookingDetails0.getSourceLocation();
       assertEquals("", string0);
@@ -27,7 +27,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test1()  throws Throwable  {
-      MockDate mockDate0 = new MockDate();
+      MockDate mockDate0 = new Date();
       BookingDetails bookingDetails0 = new BookingDetails((String) null, (String) null, (String) null, mockDate0, (String) null, mockDate0, (String) null);
       Date date0 = bookingDetails0.getExpiryDate();
       assertSame(mockDate0, date0);
@@ -35,7 +35,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test2()  throws Throwable  {
-      MockDate mockDate0 = new MockDate();
+      MockDate mockDate0 = new Date();
       BookingDetails bookingDetails0 = new BookingDetails("trb", "vj4tR4s^Ph %HN%Q<uU", "-_H", mockDate0, (String) null, mockDate0, "trb");
       String string0 = bookingDetails0.getDestination();
       assertEquals("vj4tR4s^Ph %HN%Q<uU", bookingDetails0.getSourceLocation());
@@ -46,7 +46,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test3()  throws Throwable  {
-      MockDate mockDate0 = new MockDate();
+      MockDate mockDate0 = new Date();
       BookingDetails bookingDetails0 = new BookingDetails("", "", "", mockDate0, "", mockDate0, "{#PgNN");
       Car car0 = new Car();
       car0.setRegistrationNo((-3496L));
@@ -60,7 +60,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test4()  throws Throwable  {
-      MockDate mockDate0 = new MockDate((-416), (-172), (-172), 0, (-416));
+      MockDate mockDate0 = new Date((-416), (-172), (-172), 0, (-416));
       BookingDetails bookingDetails0 = new BookingDetails("", "", "", mockDate0, "]^Zp", mockDate0, "]^Zp");
       String string0 = bookingDetails0.getBookingTime();
       assertEquals("", bookingDetails0.getDestination());
@@ -71,7 +71,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test5()  throws Throwable  {
-      MockDate mockDate0 = new MockDate();
+      MockDate mockDate0 = new Date();
       BookingDetails bookingDetails0 = new BookingDetails("", "", "]Lu18O'2v3$ hr", mockDate0, "", mockDate0, "H");
       String string0 = bookingDetails0.getBookingTime();
       assertEquals("]Lu18O'2v3$ hr", bookingDetails0.getDestination());
@@ -82,7 +82,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test6()  throws Throwable  {
-      MockDate mockDate0 = new MockDate();
+      MockDate mockDate0 = new Date();
       BookingDetails bookingDetails0 = new BookingDetails("trb", "vj4tR4s^Ph %HN%Q<uU", "-_H", mockDate0, (String) null, mockDate0, "trb");
       bookingDetails0.setBookingID((-1485L));
       long long0 = bookingDetails0.getBookingID();
@@ -91,7 +91,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test7()  throws Throwable  {
-      MockDate mockDate0 = new MockDate();
+      MockDate mockDate0 = new Date();
       BookingDetails bookingDetails0 = new BookingDetails("trb", "vj4tR4s^Ph %HN%Q<uU", "-_H", mockDate0, (String) null, mockDate0, "trb");
       bookingDetails0.getBookingDate();
       assertEquals("-_H", bookingDetails0.getDestination());
@@ -101,7 +101,7 @@ public class BookingDetails_ESTest {
 
   @Test(timeout = 4000)
   public void test8()  throws Throwable  {
-      MockDate mockDate0 = new MockDate();
+      MockDate mockDate0 = new Date();
       BookingDetails bookingDetails0 = new BookingDetails((String) null, (String) null, (String) null, mockDate0, (String) null, mockDate0, (String) null);
       bookingDetails0.setBookingDate(mockDate0);
       assertNull(bookingDetails0.getDestination());
