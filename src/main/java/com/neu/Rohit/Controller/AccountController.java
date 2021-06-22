@@ -20,7 +20,7 @@ public class AccountController {
 		
 		String userID = req.getParameter("userID");
 		AccountDAO accountDAO = new AccountDAO();
-		List paymentList = accountDAO.
+		List paymentList = accountDAO;
 		System.out.println(paymentList);
 		return null;
         
