@@ -14,7 +14,7 @@
 <!-- [START config] -->
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
   <application>c-si-devsecops</application>
-  <service>carrental</service>
+  <service>demoapp</service>
   <version>1</version>
   <threadsafe>true</threadsafe>
   <runtime>java8</runtime>
