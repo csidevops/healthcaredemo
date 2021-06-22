@@ -10,8 +10,6 @@ import static org.junit.Assert.*;
 import com.neu.Rohit.pojo.Payment;
 import com.neu.Rohit.pojo.User;
 import java.util.Set;
-import org.evosuite.runtime.EvoRunner;
-import org.evosuite.runtime.EvoRunnerParameters;
 import org.junit.runner.RunWith;
 
 public class User_ESTest {
