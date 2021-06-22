@@ -10,7 +10,7 @@
 		<property name="hibernate.connection.url">jdbc:mysql:///carapp?cloudSqlInstance=c-si-devsecops:asia-south1:csidevsecops&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory</property>
 		<property name="hibernate.connection.url">jdbc:mysql://35.244.40.40/carapp?autoReconnect=true&amp;useSSL=false</property>
 		-->
-		<property name="hibernate.connection.url">jdbc:mysql://devsecopspocmysql.mysql.database.azure.com/bankofazdb?autoReconnect=true&amp;useSSL=false</property>
+		<property name="hibernate.connection.url">jdbc:mysql://devsecopspocmysql.mysql.database.azure.com/carapp?autoReconnect=true&amp;useSSL=false</property>
 		<property name="hibernate.connection.username">devsecopspoc@devsecopspocmysql</property>
 		<property name="hibernate.connection.password">Eadevops#1234</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
