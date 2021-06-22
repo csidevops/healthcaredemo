@@ -37,7 +37,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand pull-left" href="index.html">
-                	<img src="../../Rohit/resources/images/logo.png" style="margin-top:-16px;" class="img" alt="logo">
+                	<img src="../../resources/images/logo.png" style="margin-top:-16px;" class="img" alt="logo">
                 </a>
             </div>
             <div class="navbar-header" style="padding-left: 20px; padding-top: 10px">
