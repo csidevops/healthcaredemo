@@ -1,7 +1,7 @@
  steps:
  - name: maven:3-jdk-8
    entrypoint: mvn
-   args: ['clean', 'package', 'appengine:deploy']
+   args: ['clean', 'package']
    
  - name: 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
    args: 
@@ -10,4 +10,8 @@
      - '-Dsonar.projectKey=googledevopsdemo'
      - '-Dsonar.organization=csidemo'
      - '-Dsonar.sources=./src'  
-     - '-Dsonar.java.binaries=./target/GoogleDevOpsDemo/WEB-INF/classes'
+     - '-Dsonar.java.binaries=./target/classes'
+     
+ - name: maven:3-jdk-8
+   entrypoint: mvn
+   args: ['appengine:deploy']
