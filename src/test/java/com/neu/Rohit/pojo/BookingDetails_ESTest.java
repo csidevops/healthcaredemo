@@ -10,9 +10,6 @@ import static org.junit.Assert.*;
 import com.neu.Rohit.pojo.BookingDetails;
 import com.neu.Rohit.pojo.Car;
 import java.util.Date;
-import org.evosuite.runtime.EvoRunner;
-import org.evosuite.runtime.EvoRunnerParameters;
-import org.evosuite.runtime.mock.java.util.MockDate;
 import org.junit.runner.RunWith;
 
 public class BookingDetails_ESTest {
