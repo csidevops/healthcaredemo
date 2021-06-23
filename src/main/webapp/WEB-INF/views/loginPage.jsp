@@ -78,16 +78,16 @@
               
             </div>
             <div class="form-group">
-                <p><h4>Pick Up Location</h4></p>
+                <p><h4>Appointment Finder</h4></p>
             </div>				                                                         	
             <div class="form-group ui-widget"><br>
-                <input type="text" name="form-pick-up" placeholder="Enter Address, Zip, City or Airport" class="form-control" id="form-pick-up">
+                <input type="text" name="form-pick-up" placeholder="Enter Address or Zip Code or City" class="form-control" id="form-pick-up">
                 <span class="error">This field is required</span>
             </div>                                                                                
             <div class="container col-xs-12"> 
                 <div class="container col-xs-12">                              
                     <div class="form-group" >
-                        <p><h4>Pick Up Date</h4></p>
+                        <p><h4>From Date</h4></p>
                     </div>
                 </div>                                   				                     				                        
                 <div class="container col-xs-6">
@@ -152,7 +152,7 @@
                 </div>                                       
                 <div class="container col-xs-12">
                     <div class="form-group" >
-                        <h4>Drop Off Date</h4>
+                        <h4>To Date</h4>
                     </div>
                 </div>				                                      
                 <div class="container col-xs-6">
