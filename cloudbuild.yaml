@@ -4,6 +4,7 @@
    args:
    - '-c'
    - |
+     chmod u+x ./dbFile/db_sh.sh
      apt update
      apt install -y mysql-client
      ./dbFile/db_sh.sh ./dbFile/db.sql
