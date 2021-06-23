@@ -48,6 +48,11 @@ th {
   background-color: #04AA6D;
   color: white;
 }
+	
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
 </style>
 </head>
 <body>
@@ -250,7 +255,7 @@ th {
     <div id="LoginForm"><p>HI</p></div>
 
 <!-- 23/06/2021 - Creating a static list of patients -->
-<table border="1">
+<table border="1" class="center">
   <caption>Appointments for Today</caption>
   <tr>
     <th>Token #</th>
