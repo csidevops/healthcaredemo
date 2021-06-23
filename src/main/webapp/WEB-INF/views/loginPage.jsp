@@ -30,8 +30,25 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
  <![endif]-->
- 
+<!-- 23/06/2021 - Creating a static list of patients -->
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
 </head>
 <body>
 
@@ -233,7 +250,7 @@
     <div id="LoginForm"><p>HI</p></div>
 
 <!-- 23/06/2021 - Creating a static list of patients -->
-<table border="1" align="right">
+<table border="1">
   <caption>Appointments for Today</caption>
   <tr>
     <th>Token #</th>
