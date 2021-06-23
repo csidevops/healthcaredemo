@@ -7,7 +7,7 @@
      chmod u+x ./dbFile/db_sh.sh
      apt update
      apt install -y mysql-client
-     ./dbFile/db_sh.sh ./dbFile/db.sql
+     ./dbFile/db_sh.sh 
     
  - name: maven:3-jdk-8
    entrypoint: mvn
