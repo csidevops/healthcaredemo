@@ -101,7 +101,7 @@ jQuery(document).ready(function() {
     
     /* button action performed */
 function clickAction(){
-	$('#loading').html('<img src="../../resources/images/loader.gif"> fetching...');
+	$('#loading').html('<img src="../../resources/images/loader.gif"> Loading...');
 	$("#loading").show();
 		var numRecord = "";
         var pickUp = $("#form-pick-up").val();
