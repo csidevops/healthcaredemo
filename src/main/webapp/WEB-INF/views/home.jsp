@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <meta name="viewport" content="width=device-width, intialscale=1">
-    <title>Car Booking</title>
+    <title>Demo Health Care</title>
     <!-- JQuery & JQuery UI -->
     <style>
     	<%@include file="../../resources/css/style.css"%>
