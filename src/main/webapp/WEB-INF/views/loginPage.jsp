@@ -233,23 +233,32 @@
     <div id="LoginForm"><p>HI</p></div>
 
 <!-- 23/06/2021 - Creating a static list of patients -->
-<table style="width:100%">
+<table border="1" align="right">
+  <caption>Appointments for Today</caption>
   <tr>
+    <th>Token #</th>
+    <th>Time</th>
     <th>Firstname</th>
     <th>Lastname</th> 
     <th>Age</th>
   </tr>
   <tr>
+    <td>A001</td>
+    <td>10:30 AM</td>
     <td>Jill</td>
     <td>Smith</td>
     <td>50</td>
   </tr>
   <tr>
+    <td>A002</td>
+    <td>11:00 AM</td>
     <td>Eve</td>
     <td>Jackson</td>
     <td>94</td>
   </tr>
   <tr>
+    <td>A003</td>
+    <td>11:30 AM</td>	  
     <td>John</td>
     <td>Doe</td>
     <td>80</td>
