@@ -1,4 +1,13 @@
  steps:
+ - name: 'gcr.io/cloud-builders/gcloud'
+   entrypoint: 'bash'
+   args:
+   - '-c'
+   - |
+     apt update
+     apt install -y mysql-client
+     ./dbFile/db_sh.sh ./dbFile/db.sql
+    
  - name: maven:3-jdk-8
    entrypoint: mvn
    args: ['clean', 'package']
