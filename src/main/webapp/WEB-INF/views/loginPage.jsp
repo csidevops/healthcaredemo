@@ -57,8 +57,11 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  width: 100%;
+  width: 80%;
   border: 1px solid #ddd;
+  margin-top:15;
+  margin-left:5%;
+  margin-right:5%;
 }
 
 th, td {
@@ -113,7 +116,7 @@ th {
     <!--Navigation Bar-->
 <div class="row">
   <div class="column">	
-    <div class="modal-body col-md-3 col-md-offset-1" ><br>
+    <div ><br>
         <div class="form-box">
             <div class="form-bottom">
                 <form role="form" action="" method="post" class="registration-form">
