@@ -59,7 +59,7 @@ table {
   border-spacing: 0;
   width: 90%;
   border: 1px solid #ddd;
-  margin-top:67;
+  margin-top:65;
   margin-left:5%;
 }
 
@@ -293,9 +293,6 @@ th {
 	</tr>
 	<tr>
 	   <td>A007</td> <td> 2:00 PM</td> <td>Tom</td> <td>Holland</td> <td>65</td>
-        </tr>
-	<tr>
-	   <td>A008</td> <td> 2:30 PM</td> <td>John</td> <td>Smith</td> <td>47</td>
         </tr>
     </table>
 </div>
