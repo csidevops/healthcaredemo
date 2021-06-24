@@ -116,7 +116,7 @@ th {
     <!--Navigation Bar-->
 <div class="row">
   <div class="column">	
-    <div class="modal-body col-md-3"><br>
+    <div class="modal-body"><br>
         <div class="form-box">
             <div class="form-bottom">
                 <form role="form" action="" method="post" class="registration-form">
