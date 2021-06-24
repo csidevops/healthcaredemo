@@ -28,5 +28,5 @@
    
  artifacts:
    objects:
-     location: 'devsecops-bucket/demoapp'
+     location: 'gs://devsecops-bucket/demoapp'
      paths: ['./target/*.war']
