@@ -32,27 +32,48 @@
  <![endif]-->
 <!-- 23/06/2021 - Creating a static list of patients -->
 <style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 table {
   border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
 }
 
 th, td {
   text-align: left;
-  padding: 8px;
+  padding: 16px;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
-
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 th {
   background-color: #04AA6D;
   color: white;
 }
-table# table1 {
-    width:100%; 
-    margin-top:15%;
-    margin-left:5%;
-    margin-right:30%;
-}
+	
 </style>
 </head>
 <body>
@@ -90,9 +111,8 @@ table# table1 {
         </div>
     </div>
     <!--Navigation Bar-->
-   <table>
-    <tr>
-    <td>
+<div class="row">
+  <div class="column">	
     <div class="modal-body col-md-3 col-md-offset-1" ><br>
         <div class="form-box">
             <div class="form-bottom">
@@ -244,8 +264,8 @@ table# table1 {
             </div>
         </div>
     </div>
-    </td>
-    <td>
+</div>
+  <div class="column">
 <table id="table1">
       <caption>Appointments for Today</caption>
 	<tr>
@@ -277,14 +297,10 @@ table# table1 {
         </tr>
     </table>
 </td>
-<td> </td> 
-<td> </td> 
-<td> </td> 
-<td> </td> 
-<td> </td> 
 </tr>
 </table>
-
+</div>
+</div>
 <!--Results-->
 <!--
 <div class="modal-body col-md-3 col-md-offset-1" id="result">
