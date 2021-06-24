@@ -57,9 +57,9 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  width: 85%;
+  width: 95%;
   border: 1px solid #ddd;
-  margin-top:30;
+  margin-top:40;
 }
 
 th, td {
