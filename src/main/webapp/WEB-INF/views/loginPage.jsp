@@ -287,13 +287,16 @@ table#table1 {
 </table>
 
 <!--Results-->
+<!--
 <div class="modal-body col-md-3 col-md-offset-1" id="result">
 </div>
 <div class="modal-body col-md-3" style="padding-top: 32px; padding-left: 30px" id="carResult">
 </div>
+-->
 <!--Results-->
+<!--
     <div id="LoginForm"><p>HI</p></div>
-
+-->
     
 </body>
 </html>
