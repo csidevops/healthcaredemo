@@ -91,41 +91,7 @@ table#table1 {
     </div>
     <!--Navigation Bar-->
 
-<!-- 23/06/2021 - Creating a static list of patients - Begin -->
-<div margin-top: 30px; margin-right: 30px">
-<table id="table1">
-  <caption>Appointments for Today</caption>
-  <tr>
-    <th>Token #</th>
-    <th>Time</th>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>A001</td>
-    <td>10:30 AM</td>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>A002</td>
-    <td>11:00 AM</td>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>A003</td>
-    <td>11:30 AM</td>	  
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
-  </tr>
-</table>
-</div>
-<!-- 23/06/2021 - Creating a static list of patients - End -->
+
 		  
     <div class="modal-body col-md-3 col-md-offset-1" ><br>
         <div class="form-box">
@@ -277,6 +243,41 @@ table#table1 {
             <div id="loading" style="padding-top: 15px; padding-left: 73px"></div>
             </div>
         </div>
+	<!-- 23/06/2021 - Creating a static list of patients - Begin -->
+	<div margin-top: 30px; margin-right: 30px">
+		<table id="table1">
+		  <caption>Appointments for Today</caption>
+		  <tr>
+		    <th>Token #</th>
+		    <th>Time</th>
+		    <th>Firstname</th>
+		    <th>Lastname</th> 
+		    <th>Age</th>
+		  </tr>
+		  <tr>
+		    <td>A001</td>
+		    <td>10:30 AM</td>
+		    <td>Jill</td>
+		    <td>Smith</td>
+		    <td>50</td>
+		  </tr>
+		  <tr>
+		    <td>A002</td>
+		    <td>11:00 AM</td>
+		    <td>Eve</td>
+		    <td>Jackson</td>
+		    <td>94</td>
+		  </tr>
+		  <tr>
+		    <td>A003</td>
+		    <td>11:30 AM</td>	  
+		    <td>John</td>
+		    <td>Doe</td>
+		    <td>80</td>
+		  </tr>
+		</table>
+	</div>
+	<!-- 23/06/2021 - Creating a static list of patients - End -->
     </div>
     
 <!--Results-->
