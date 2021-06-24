@@ -51,8 +51,8 @@ th {
 table#table1 {
     width:100%; 
     margin-top:15%;
-    margin-left:5%
-    margin-right:5%
+    margin-left:5%;
+    margin-right:5%;
 }
 </style>
 </head>
@@ -91,7 +91,9 @@ table#table1 {
         </div>
     </div>
     <!--Navigation Bar-->
-    
+   <table>
+    <tr>
+    <td>
     <div class="modal-body col-md-3 col-md-offset-1" ><br>
         <div class="form-box">
             <div class="form-bottom">
@@ -243,16 +245,9 @@ table#table1 {
             </div>
         </div>
     </div>
-    
-<!--Results-->
-<div class="modal-body col-md-3 col-md-offset-1" id="result">
-</div>
-<div class="modal-body col-md-3" style="padding-top: 32px; padding-left: 30px" id="carResult">
-</div>
-<!--Results-->
-    <div id="LoginForm"><p>HI</p></div>
-
-    <table id="table1">
+    </td>
+    <td>
+<table id="table1">
       <caption>Appointments for Today</caption>
 	<tr>
 	   <th>Token #</th> <th>Time</th> <th>Firstname</th> <th>Lastname</th> <th>Age</th>
@@ -282,5 +277,18 @@ table#table1 {
 	   <td>A008</td> <td> 2:30 PM</td> <td>John</td> <td>Smith</td> <td>47</td>
         </tr>
     </table>
+</td>
+</tr>
+</table>
+
+<!--Results-->
+<div class="modal-body col-md-3 col-md-offset-1" id="result">
+</div>
+<div class="modal-body col-md-3" style="padding-top: 32px; padding-left: 30px" id="carResult">
+</div>
+<!--Results-->
+    <div id="LoginForm"><p>HI</p></div>
+
+    
 </body>
 </html>
