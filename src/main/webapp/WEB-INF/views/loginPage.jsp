@@ -50,7 +50,7 @@ th {
 	
 table#table1 {
     width:70%; 
-    margin-top:15%
+    margin-top:15%;
     margin-left:40%; 
     margin-right:5%;
 }
