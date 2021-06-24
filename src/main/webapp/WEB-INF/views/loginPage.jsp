@@ -91,8 +91,12 @@ table#table1 {
         </div>
     </div>
     <!--Navigation Bar-->
-
-		  
+    
+    <!-- 23/06/2021 - Creating a static list of patients - Begin -->
+    <table>	  
+    <tr>
+    <td>	
+    <!-- 23/06/2021 - Creating a static list of patients - End -->
     <div class="modal-body col-md-3 col-md-offset-1" ><br>
         <div class="form-box">
             <div class="form-bottom">
@@ -244,20 +248,10 @@ table#table1 {
             </div>
         </div>
     </div>
-    
-<!--Results-->
-<div class="modal-body col-md-3 col-md-offset-1" id="result">
-
-</div>
-<div class="modal-body col-md-3" style="padding-top: 32px; padding-left: 30px" id="carResult">
-
-</div>
-<!--Results-->
-    <div id="LoginForm"><p>HI</p></div>
-
-<!-- 23/06/2021 - Creating a static list of patients - Begin -->
-	<div>
-		<table id="table1">
+    <!-- 23/06/2021 - Creating a static list of patients - Begin -->
+    </td>
+    <td>
+    <table id="table1">
 		  <caption>Appointments for Today</caption>
 		  <tr>
 		    <th>Token #</th>
@@ -288,7 +282,21 @@ table#table1 {
 		    <td>80</td>
 		  </tr>
 		</table>
-	</div>
-	<!-- 23/06/2021 - Creating a static list of patients - End -->
+    </td>
+    </tr>
+    </table>    
+   <!-- 23/06/2021 - Creating a static list of patients - End-->
+
+<!--Results-->
+<div class="modal-body col-md-3 col-md-offset-1" id="result">
+
+</div>
+<div class="modal-body col-md-3" style="padding-top: 32px; padding-left: 30px" id="carResult">
+
+</div>
+<!--Results-->
+    <div id="LoginForm"><p>HI</p></div>
+
+
 </body>
 </html>
