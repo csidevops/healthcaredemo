@@ -311,7 +311,7 @@ th {
 </div>
 </div>	
 <!--Results-->
-
+<!--
 <div class="modal-body col-md-3 col-md-offset-1" id="result">
 
 </div>
@@ -319,8 +319,10 @@ th {
 
 
 </div>
-
+-->
 <!--Results-->
+<!--
     <div id="LoginForm"><p>HI</p></div>
+-->
 </body>
 </html>
