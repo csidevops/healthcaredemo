@@ -281,6 +281,8 @@ table#table1 {
 		  </tr>
 		</table>
     </td>
+    <td>
+    </td>
     </tr>
     </table>    
    <!-- 23/06/2021 - Creating a static list of patients - End-->
