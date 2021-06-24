@@ -243,8 +243,19 @@ table#table1 {
             <div id="loading" style="padding-top: 15px; padding-left: 73px"></div>
             </div>
         </div>
+    </div>
+    
+<!--Results-->
+<div class="modal-body col-md-3 col-md-offset-1" id="result">
 
-	<!-- 23/06/2021 - Creating a static list of patients - Begin -->
+</div>
+<div class="modal-body col-md-3" style="padding-top: 32px; padding-left: 30px" id="carResult">
+
+</div>
+<!--Results-->
+    <div id="LoginForm"><p>HI</p></div>
+
+<!-- 23/06/2021 - Creating a static list of patients - Begin -->
 	<div>
 		<table id="table1">
 		  <caption>Appointments for Today</caption>
@@ -279,18 +290,5 @@ table#table1 {
 		</table>
 	</div>
 	<!-- 23/06/2021 - Creating a static list of patients - End -->
-    </div>
-    
-<!--Results-->
-<div class="modal-body col-md-3 col-md-offset-1" id="result">
-
-</div>
-<div class="modal-body col-md-3" style="padding-top: 32px; padding-left: 30px" id="carResult">
-
-</div>
-<!--Results-->
-    <div id="LoginForm"><p>HI</p></div>
-
-
 </body>
 </html>
