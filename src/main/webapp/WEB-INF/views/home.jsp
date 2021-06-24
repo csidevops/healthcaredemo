@@ -110,8 +110,9 @@
     </div>
     <!--Navigation Bar-->
 
-
-    <div class="modal-body col-md-3 col-md-offset-1" ><br>
+<div class="row">
+  <div class="column">
+    <div class="modal-body col-md-offset-1" ><br>
         <div class="form-box">
             <div class="form-bottom">
                 <form role="form" action="" method="post" class="registration-form">
@@ -262,7 +263,13 @@
             </div>
         </div>
     </div>
-    
+ </div>
+  <div class="column">
+<table>   
+<tr> </tr>
+</table>
+</div>
+</div>	
 <!--Results-->
 
 <div class="modal-body col-md-3 col-md-offset-1" id="result">
