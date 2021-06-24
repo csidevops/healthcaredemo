@@ -47,13 +47,7 @@ th {
   background-color: #04AA6D;
   color: white;
 }
-	
-table#table1 {
-    width:100%; 
-    margin-top:15%;
-    margin-left:5%;
-    margin-right:5%;
-}
+
 </style>
 </head>
 <body>
@@ -247,7 +241,7 @@ table#table1 {
     </div>
     </td>
     <td>
-<table id="table1">
+<table>
       <caption>Appointments for Today</caption>
 	<tr>
 	   <th>Token #</th> <th>Time</th> <th>Firstname</th> <th>Lastname</th> <th>Age</th>
