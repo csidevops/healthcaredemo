@@ -297,9 +297,6 @@ th {
 	   <td>A008</td> <td> 2:30 PM</td> <td>John</td> <td>Smith</td> <td>47</td>
         </tr>
     </table>
-</td>
-</tr>
-</table>
 </div>
 </div>
 <!--Results-->
