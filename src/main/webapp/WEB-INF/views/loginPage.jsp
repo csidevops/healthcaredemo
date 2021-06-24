@@ -59,7 +59,8 @@ table {
   border-spacing: 0;
   width: 95%;
   border: 1px solid #ddd;
-  margin-top:40;
+  margin-top:75;
+  margin-left:5%;
 }
 
 th, td {
