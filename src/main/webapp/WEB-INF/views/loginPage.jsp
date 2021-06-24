@@ -51,8 +51,6 @@ th {
 table#table1 {
     width:100%; 
     margin-top:15%;
-    margin-left:5%; 
-    margin-right:5%;
 }
 </style>
 </head>
