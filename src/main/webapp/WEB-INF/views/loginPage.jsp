@@ -50,8 +50,8 @@ th {
 	
 table#table1 {
     width:70%; 
-    margin-left:15%; 
-    margin-right:15%;
+    margin-left:40%; 
+    margin-right:5%;
 }
 </style>
 </head>
