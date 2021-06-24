@@ -34,7 +34,6 @@
 <style>
 table {
   border-collapse: collapse;
-  width: 100%;
 }
 
 th, td {
@@ -49,9 +48,10 @@ th {
   color: white;
 }
 	
-table.center {
-  margin-left: auto; 
-  margin-right: auto;
+table#table1 {
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
 }
 </style>
 </head>
@@ -255,7 +255,7 @@ table.center {
     <div id="LoginForm"><p>HI</p></div>
 
 <!-- 23/06/2021 - Creating a static list of patients -->
-<table border="1" class="center">
+<table id="table1">
   <caption>Appointments for Today</caption>
   <tr>
     <th>Token #</th>
