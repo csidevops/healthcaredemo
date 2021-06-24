@@ -59,7 +59,7 @@ table {
   border-spacing: 0;
   width: 90%;
   border: 1px solid #ddd;
-  margin-top:70;
+  margin-top:67;
   margin-left:5%;
 }
 
