@@ -87,7 +87,7 @@ th {
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand pull-left" href="index.html">
-                	<img src="../../resources/images/logo.png" style="margin-top:-16px; float:left" class="img" alt="logo" width="185" height="52">
+                	<img src="../../resources/images/logo.png" style="margin-top:-16px; float:left" class="img" alt="logo" width="170" height="52">
                 </a>
                 
             </div>
