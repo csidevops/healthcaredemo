@@ -77,7 +77,7 @@ th {
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand pull-left" href="index.html">
-                	<img src="../../resources/images/logo.png" style="margin-top:-16px; float:left" class="img" alt="logo">
+                	<img src="../../resources/images/logo.png" style="margin-top:-16px; float:left" class="img" alt="logo" width="195" height="52">
                 </a>
             </div>
             <div class="navbar-header" style="padding-left: 20px; padding-top: 10px">
