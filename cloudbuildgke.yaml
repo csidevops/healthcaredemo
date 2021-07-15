@@ -13,9 +13,9 @@
      - '-Dsonar.java.binaries=./target/classes'
      
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'gcr.io/c-si-devsecops/GoogleDevOpsDemo', '.']
+   args: ['build', '-t', 'gcr.io/c-si-devsecops/googledevopsdemo', '.']
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['push', 'gcr.io/c-si-devsecops/GoogleDevOpsDemo']
+   args: ['push', 'gcr.io/c-si-devsecops/googledevopsdemo']
    
  artifacts:
    objects:
