@@ -14,6 +14,6 @@ RUN set -x \
 
 RUN export CLASSPATH=$CLASSPATH:/usr/share/java/mysql-connector-java.jar
 
-ADD GoogleDevOpsDemo.war /usr/local/tomcat/webapps/GoogleDevOpsDemo.war
+ADD ./target/GoogleDevOpsDemo-1.0.0-BUILD-SNAPSHOT.war /usr/local/tomcat/webapps/GoogleDevOpsDemo.war
 
 EXPOSE 8080
