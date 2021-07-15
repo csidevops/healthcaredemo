@@ -24,8 +24,8 @@
    - run
    - --filename=kubedeployment.yaml
    - --image=gcr.io/c-si-devsecops/googledevopsdemo:latest
-   - --location=${_CLOUDSDK_COMPUTE_ZONE}
-   - --cluster=${_CLOUDSDK_CONTAINER_CLUSTER}   
+   - --location=asia-south1-a
+   - --cluster=devsecopspocgks   
 # Upload artifcats to Google Cloud Storage   
  artifacts:
    objects:
