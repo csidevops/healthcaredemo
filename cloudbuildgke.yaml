@@ -1,8 +1,9 @@
  steps:    
+# Perform Maven build for the java project 
  - name: maven:3-jdk-8
    entrypoint: mvn
    args: ['clean', 'package']   
-     
+# Perform code quality analysis using SonarQube       
  - name: 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
    args: 
      - '-Dsonar.host.url=https://sonarcloud.io'
@@ -11,12 +12,21 @@
      - '-Dsonar.organization=csidemo'
      - '-Dsonar.sources=./src'  
      - '-Dsonar.java.binaries=./target/classes'
-     
+# Build Docker image using tomcat and war file     
  - name: 'gcr.io/cloud-builders/docker'
    args: ['build', '-t', 'gcr.io/c-si-devsecops/googledevopsdemo', '.']
+# Push Docker image to Google Container Registry
  - name: 'gcr.io/cloud-builders/docker'
    args: ['push', 'gcr.io/c-si-devsecops/googledevopsdemo']
-   
+# deploy container image to GKE
+ - name: "gcr.io/cloud-builders/gke-deploy"
+   args:
+   - run
+   - --filename=kubedeployment.yaml
+   - --image=gcr.io/c-si-devsecops/googledevopsdemo:latest
+   - --location=${_CLOUDSDK_COMPUTE_ZONE}
+   - --cluster=${_CLOUDSDK_CONTAINER_CLUSTER}   
+# Upload artifcats to Google Cloud Storage   
  artifacts:
    objects:
      location: 'gs://devsecops-bucket/demoapp'
