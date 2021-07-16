@@ -14,9 +14,9 @@
    args: ['clean', 'package']   
    
    artifacts:
-   objects:
-     location: 'gs://devsecops-bucket/demoapp'
-     paths: ['./target/*.war']
+     objects:
+       location: 'gs://devsecops-bucket/demoapp'
+       paths: ['./target/*.war']
      
  - name: 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
    args: 
