@@ -1,4 +1,5 @@
  steps:
+# Perform Database deployment in Azure Cloud
  - name: 'gcr.io/cloud-builders/gcloud'
    entrypoint: 'bash'
    args:
@@ -8,11 +9,11 @@
      apt update
      apt install -y mysql-client
      ./dbFile/db_sh.sh 
-    
+# Perform Maven build for the java project     
  - name: maven:3-jdk-8
    entrypoint: mvn
    args: ['clean', 'package']   
-    
+# Perform code quality analysis using SonarQube    
  - name: 'gcr.io/$PROJECT_ID/sonar-scanner:latest'
    args: 
      - '-Dsonar.host.url=https://sonarcloud.io'
@@ -21,18 +22,18 @@
      - '-Dsonar.organization=csidemo'
      - '-Dsonar.sources=./src'  
      - '-Dsonar.java.binaries=./target/classes'
-     
+# Perform App Engine deployment in Google Cloud for Demo Health Care Portal     
  - name: maven:3-jdk-8
    entrypoint: mvn
    args: ['appengine:deploy']
-   
- - name: 'gcr.io/cloud-builders/gcloud'
+# Perform Penetration Testing for Demo Health Care Portal    
+ - name: gcr.io/cloud-builders/docker
    entrypoint: 'bash'
    args:
-   - '-c'
-   - |
-     docker run -t owasp/zap2docker-weekly zap-api-scan.py -t https://demoapp-dot-c-si-devsecops.el.r.appspot.com -f openapi
-     
+     - -c
+     - |
+       docker run -t owasp/zap2docker-weekly zap-api-scan.py -t https://demoapp-dot-c-si-devsecops.el.r.appspot.com/ -f openapi -I
+# Upload artifcats to Google Cloud Storage     
  artifacts:
    objects:
      location: 'gs://devsecops-bucket/demoapp'
