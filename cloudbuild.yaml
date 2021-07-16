@@ -29,7 +29,9 @@
  - name: 'gcr.io/cloud-builders/gcloud'
    entrypoint: 'bash'
    args:
-   - docker run -t owasp/zap2docker-weekly zap-api-scan.py -t https://demoapp-dot-c-si-devsecops.el.r.appspot.com/ -f openapi
+   - '-c'
+   - |
+     docker run -t owasp/zap2docker-weekly zap-api-scan.py -t https://demoapp-dot-c-si-devsecops.el.r.appspot.com -f openapi
      
  artifacts:
    objects:
