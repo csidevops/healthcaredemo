@@ -26,6 +26,13 @@
    - --image=gcr.io/c-si-devsecops/googledevopsdemo:latest
    - --location=asia-south1-a
    - --cluster=devsecopspocgks   
+# Perform Penetration Testing for Demo Health Care Portal    
+ - name: gcr.io/cloud-builders/docker
+   entrypoint: 'bash'
+   args:
+     - -c
+     - |
+       docker run -t owasp/zap2docker-weekly zap-api-scan.py -t https://demoapp-dot-c-si-devsecops.el.r.appspot.com/ -f openapi -I   
 # Upload artifcats to Google Cloud Storage   
  artifacts:
    objects:
