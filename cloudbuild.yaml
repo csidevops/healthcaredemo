@@ -13,7 +13,7 @@
    entrypoint: mvn
    args: ['clean', 'package']   
    
-   artifacts:
+ artifacts:
      objects:
        location: 'gs://devsecops-bucket/demoapp'
        paths: ['./target/*.war']
