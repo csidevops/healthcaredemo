@@ -32,7 +32,7 @@
    args:
      - -c
      - |
-       docker run -t owasp/zap2docker-weekly zap-api-scan.py -t https://demoapp-dot-c-si-devsecops.el.r.appspot.com/ -f openapi -I   
+       docker run -t owasp/zap2docker-weekly zap-api-scan.py -t http://35.200.182.219/GoogleDevOpsDemo/ -f openapi -I   
 # Upload artifcats to Google Cloud Storage   
  artifacts:
    objects:
