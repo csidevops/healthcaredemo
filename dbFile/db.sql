@@ -1,4 +1,4 @@
-DROP 'demoapp'
+DROP DATABASE IF EXISTS `demoapp`;
 CREATE DATABASE  IF NOT EXISTS `demoapp`;
 USE `demoapp`;
 
