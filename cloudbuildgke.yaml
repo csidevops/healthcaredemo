@@ -18,6 +18,16 @@
 # Push Docker image to Google Container Registry
  - name: 'gcr.io/cloud-builders/docker'
    args: ['push', 'gcr.io/c-si-devsecops/googledevopsdemo']
+# Perform Database deployment in Azure Cloud
+ - name: 'gcr.io/cloud-builders/gcloud'
+   entrypoint: 'bash'
+   args:
+   - '-c'
+   - |
+     chmod u+x ./dbFile/db_sh.sh
+     apt update
+     apt install -y mysql-client
+     ./dbFile/db_sh.sh 
 # deploy container image to GKE
  - name: "gcr.io/cloud-builders/gke-deploy"
    args:
