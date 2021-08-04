@@ -4,30 +4,18 @@
 "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>	
-		
-		<!--
-		<property name="hibernate.connection.url">jdbc:mysql:///carapp?cloudSqlInstance=c-si-devsecops:asia-south1:csidevsecops&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory</property>
-		<property name="hibernate.connection.url">jdbc:mysql://35.244.40.40:3306/carapp?autoReconnect=true&amp;useSSL=false</property>
-		<property name="hibernate.connection.username">root</property>
-		-->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>	
 		<property name="hibernate.connection.url">jdbc:mysql://devsecopspocmysql.mysql.database.azure.com/demoapp?autoReconnect=true&amp;useSSL=false</property>
 		<property name="hibernate.connection.username">devsecopspoc@devsecopspocmysql</property>		
 		<property name="hibernate.connection.password">Eadevops#1234</property>
-		<property name="hibernate.hbm2ddl.auto">update</property>
-		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">true</property>
 		<property name="hibernate.use_sql_comments">true</property>
-
-		<!-- JTA details -->
-		<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
-		<!-- <property name="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</property> -->
 				
-	<mapping class="com.neu.Rohit.pojo.BookingDetails" />
-	<mapping class="com.neu.Rohit.pojo.Car" />
-	<mapping class="com.neu.Rohit.pojo.Payment" />
-	<mapping class="com.neu.Rohit.pojo.User" />
-		
+		<mapping class="com.neu.Rohit.pojo.BookingDetails" />
+		<mapping class="com.neu.Rohit.pojo.Car" />
+		<mapping class="com.neu.Rohit.pojo.Payment" />
+		<mapping class="com.neu.Rohit.pojo.User" />		
 	</session-factory>
 </hibernate-configuration>
