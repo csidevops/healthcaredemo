@@ -17,7 +17,7 @@ import com.neu.Rohit.DAO.UserDao;
 import com.neu.Rohit.Exception.AddException;
 import com.neu.Rohit.pojo.User;
 //Added as part of Gcloud Appengine setup
-//import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.client.json.jackson2.JacksonFactory;
 
 
 @Controller
@@ -37,9 +37,12 @@ public class LoginController extends HttpServlet{
 				UserDao userDao = new UserDao();
 				User u = userDao.checkUser(email, password);
 				if(u != null){
+					String error = "Invalid Credentials!";
+					req.setAttribute("error", error);
+					mv.setViewName("home");
 					
-					session.setAttribute("User", u);
-					mv.setViewName("loginPage");
+//					session.setAttribute("User", u);
+//					mv.setViewName("loginPage");
 				}
 				else{
 					String error = "Invalid Credentials!";
