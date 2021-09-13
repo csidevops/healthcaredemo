@@ -18,12 +18,11 @@ import com.neu.Rohit.Exception.AddException;
 import com.neu.Rohit.pojo.User;
 //Added as part of Gcloud Appengine setup
 import com.google.api.client.json.jackson2.JacksonFactory;
-import java.io.Serializable;
 
 
 @Controller
 @RequestMapping("login.htm")
-public class LoginController extends HttpServlet implements Serializable{
+public class LoginController extends HttpServlet {
 	@RequestMapping(method=RequestMethod.POST) //mapping at method level- specifies the method name get or post
 	
 	protected ModelAndView doSubmitAction(@ModelAttribute("user") User user, BindingResult result,Model model, HttpServletRequest req, HttpServletResponse res) throws Exception, AddException{
@@ -37,15 +36,8 @@ public class LoginController extends HttpServlet implements Serializable{
 			if(action.equalsIgnoreCase("login")){
 				UserDao userDao = new UserDao();
 				User u = userDao.checkUser(email, password);
-				if(u != null){		
-					if (session == null)
-					{
-					String error = "Invalid Session!";
-					req.setAttribute("error", error);
-					mv.setViewName("home");
-					}
-					else
-					{
+				if(u != null)
+					{		
 //					session.setAttribute("User", u);
 					session.setAttribute("User", "Deepak Kannan");						
 					mv.setViewName("loginPage");
