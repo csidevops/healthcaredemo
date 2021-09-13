@@ -269,7 +269,7 @@ th {
 </div>
   <div class="column">
 <table id="table1">
-      <caption>Appointments for Today</caption>
+      <caption>Appointments for Today </caption>
 	<tr>
 	   <th>Token #</th> <th>Time</th> <th>Firstname</th> <th>Lastname</th> <th>Age</th>
 	</tr>
