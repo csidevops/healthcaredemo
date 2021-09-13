@@ -39,7 +39,7 @@ public class LoginController extends HttpServlet {
 				if(u != null)
 					{		
 //					session.setAttribute("User", u);
-					session.setAttribute("User", "Deepak Kannan");						
+					session.setAttribute("User", 1);						
 					mv.setViewName("loginPage");
 					
 				}
