@@ -36,13 +36,10 @@ public class LoginController extends HttpServlet{
 			if(action.equalsIgnoreCase("login")){
 				UserDao userDao = new UserDao();
 				User u = userDao.checkUser(email, password);
-				if(u != null){
-					String error = "Invalid Credentials!";
-					req.setAttribute("error", error);
-					mv.setViewName("home");
-					
+				if(u != null){				
 //					session.setAttribute("User", u);
-//					mv.setViewName("loginPage");
+					req.setAttribute("User", u);
+					mv.setViewName("loginPage");
 				}
 				else{
 					String error = "Invalid Credentials!";
