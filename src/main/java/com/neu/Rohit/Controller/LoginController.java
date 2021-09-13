@@ -22,7 +22,7 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 
 @Controller
 @RequestMapping("login.htm")
-public class LoginController extends HttpServlet{
+public class LoginController extends HttpServlet implements Serializable{
 	@RequestMapping(method=RequestMethod.POST) //mapping at method level- specifies the method name get or post
 	
 	protected ModelAndView doSubmitAction(@ModelAttribute("user") User user, BindingResult result,Model model, HttpServletRequest req, HttpServletResponse res) throws Exception, AddException{
