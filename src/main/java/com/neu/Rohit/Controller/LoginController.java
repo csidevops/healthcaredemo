@@ -41,7 +41,7 @@ public class LoginController extends HttpServlet {
 //					session.setAttribute("User", u);
 					session.setAttribute("User", "Deepak Kannan");						
 					mv.setViewName("loginPage");
-					}
+					
 				}
 				else{
 					String error = "Invalid Credentials!";
