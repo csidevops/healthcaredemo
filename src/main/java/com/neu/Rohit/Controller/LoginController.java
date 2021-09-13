@@ -32,7 +32,7 @@ public class LoginController extends HttpServlet{
 			String password = req.getParameter("password");
 			String action = req.getParameter("action");
 			System.out.println(action);
-			HttpSession session =req.getSession(False);
+			HttpSession session =req.getSession(false);
 			if(action.equalsIgnoreCase("login")){
 				UserDao userDao = new UserDao();
 				User u = userDao.checkUser(email, password);
