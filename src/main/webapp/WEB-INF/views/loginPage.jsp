@@ -32,7 +32,7 @@
  <![endif]-->
 <!-- 23/06/2021 - Creating a static list of patients -->
 <style>
-* {
+{
   box-sizing: border-box;
 }
 
