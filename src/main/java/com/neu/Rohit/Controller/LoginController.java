@@ -46,7 +46,8 @@ public class LoginController extends HttpServlet implements Serializable{
 					}
 					else
 					{
-					session.setAttribute("User", u);
+//					session.setAttribute("User", u);
+					session.setAttribute("User", "Deepak Kannan");						
 					mv.setViewName("loginPage");
 					}
 				}
