@@ -38,8 +38,7 @@ public class LoginController extends HttpServlet {
 				User u = userDao.checkUser(email, password);
 				if(u != null)
 					{		
-//					session.setAttribute("User", u);
-					session.setAttribute("User", 1);						
+					session.setAttribute("User", u);
 					mv.setViewName("loginPage");
 					
 				}
