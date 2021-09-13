@@ -18,6 +18,7 @@ import com.neu.Rohit.Exception.AddException;
 import com.neu.Rohit.pojo.User;
 //Added as part of Gcloud Appengine setup
 import com.google.api.client.json.jackson2.JacksonFactory;
+import java.io.Serializable;
 
 
 @Controller
