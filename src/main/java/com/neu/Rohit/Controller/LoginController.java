@@ -32,11 +32,12 @@ public class LoginController extends HttpServlet{
 			String password = req.getParameter("password");
 			String action = req.getParameter("action");
 			System.out.println(action);
-			HttpSession session =req.getSession(true);
+			HttpSession session =req.getSession();
 			if(action.equalsIgnoreCase("login")){
 				UserDao userDao = new UserDao();
 				User u = userDao.checkUser(email, password);
-				if(u != null){				
+				if(u != null){		
+					HttpSession session =req.getSession();
 					session.setAttribute("User", u);
 					mv.setViewName("loginPage");
 				}
